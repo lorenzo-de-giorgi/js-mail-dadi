@@ -35,7 +35,12 @@ dadiGame.addEventListener('click', function(){
                 <p><img src="img/${randomNumberUser}.svg" alt=""></p>
                 `;       
         } else if(randomNumberUser == randomNumberComputer){
-                number.ht
+                number.innerHTML = `
+                <p>Tu e il computer avete pareggiato con il numero:</p>
+                `;
+                winner.innerHTML = `
+                <p><img src="img/${randomNumberComputer}.svg" alt=""></p>
+                `;
         } else {
                 number.innerHTML = `
                 <p>Avevi il numero: "${randomNumberUser}". Il computer ha vinto con il numero:</p>
